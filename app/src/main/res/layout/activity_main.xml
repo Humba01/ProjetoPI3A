@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -12,9 +11,9 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,17 +25,19 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
                 android:layout_weight="1"
                 android:importantForAccessibility="no"
-                app:srcCompat="@android:drawable/btn_star_big_on"
+                app:srcCompat="@drawable/vector"
                 tools:ignore="ImageContrastCheck,InefficientWeight" />
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="354dp"
+                android:layout_width="196dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:fontFamily="@font/righteous"
                 android:padding="3sp"
                 android:text="Papinho"
                 android:textAlignment="textStart"
@@ -44,11 +45,27 @@
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FEF6DE"
+                android:text="@string/prefer_ncias"
+                android:textAlignment="viewEnd"
+                android:textColor="#1F1F1F"
+                android:textColorLink="#FEF6DE"
+                android:textSize="10sp"
+                app:cornerRadius="0sp"
+                app:iconTint="#000000"
+                tools:ignore="SmallSp,TouchTargetSizeCheck" />
+
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
             android:padding="6sp">
 
             <TextView
@@ -57,14 +74,15 @@
                 android:layout_height="wrap_content"
                 android:hapticFeedbackEnabled="false"
                 android:text="Conversa1"
+                tools:ignore="HardcodedText"
                 tools:layout_editor_absoluteX="3dp"
-                tools:layout_editor_absoluteY="2dp"
-                tools:ignore="HardcodedText" />
+                tools:layout_editor_absoluteY="2dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
             android:padding="6sp">
 
             <TextView
@@ -73,14 +91,15 @@
                 android:layout_height="wrap_content"
                 android:hapticFeedbackEnabled="false"
                 android:text="Conversa2"
+                tools:ignore="HardcodedText"
                 tools:layout_editor_absoluteX="3dp"
-                tools:layout_editor_absoluteY="2dp"
-                tools:ignore="HardcodedText" />
+                tools:layout_editor_absoluteY="2dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
             android:padding="6sp">
 
             <TextView
