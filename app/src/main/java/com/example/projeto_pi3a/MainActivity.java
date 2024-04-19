@@ -24,12 +24,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public GradientDrawable setBorderRounded(){
-        GradientDrawable shape =  new GradientDrawable();
-        shape.setColor(Color.WHITE);
-        shape.setCornerRadius(10);
-        shape.setStroke(2, Color.GRAY);
-        return shape;
-    }
-
 }
