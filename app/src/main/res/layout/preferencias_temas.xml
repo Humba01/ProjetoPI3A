@@ -17,7 +17,9 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="40px"
             android:background="#FFF7DF"
+            android:gravity="center"
             android:padding="10sp"
             android:text="Temas"
             android:textSize="20sp"
@@ -27,6 +29,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20px"
             android:orientation="horizontal"
             android:padding="9sp">
 
@@ -67,6 +70,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20px"
             android:orientation="horizontal"
             android:padding="9sp">
 
