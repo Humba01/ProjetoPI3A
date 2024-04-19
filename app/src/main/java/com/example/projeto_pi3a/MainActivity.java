@@ -1,5 +1,7 @@
 package com.example.projeto_pi3a;
 
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -21,4 +23,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public GradientDrawable setBorderRounded(){
+        GradientDrawable shape =  new GradientDrawable();
+        shape.setColor(Color.WHITE);
+        shape.setCornerRadius(10);
+        shape.setStroke(2, Color.GRAY);
+        return shape;
+    }
+
 }
