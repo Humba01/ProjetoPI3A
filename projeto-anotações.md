@@ -7,5 +7,9 @@ paleta de cores do projeto:
 * #F6DE00
 * #FFE923
 * #FFEF63
+* #FFF7DF
 * #FD1049
 * #B90808
+
+* FFFAF2AB
+* 

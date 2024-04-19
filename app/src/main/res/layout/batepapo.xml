@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2B2501">
+    android:background="#D0C19E">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -16,13 +16,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
             android:orientation="horizontal">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/borda_arredondada"
-                android:backgroundTint="#D2BFEC"
+                android:backgroundTint="#FFF7DF"
                 android:orientation="vertical">
 
                 <ImageButton
@@ -30,7 +31,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="20px"
-                    android:backgroundTint="#D2BFEC"
+                    android:backgroundTint="#00FFEF63"
                     android:foregroundTint="#B62C2C"
                     android:padding="20px"
                     android:tint="#000000"
@@ -53,7 +54,7 @@
                     android:layout_marginLeft="2px"
                     android:layout_marginRight="20px"
                     android:layout_marginBottom="2px"
-                    android:backgroundTint="#D2BFEC"
+                    android:backgroundTint="#00FFEF63"
                     android:cursorVisible="true"
                     android:text=". . ."
                     android:textAlignment="center"
@@ -74,7 +75,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="590dp"
-            android:background="#2F2143"
+            android:background="#D1C29F"
             android:orientation="vertical">
 
             <EditText
@@ -85,6 +86,7 @@
                 android:layout_marginTop="50px"
                 android:layout_marginRight="20px"
                 android:background="@drawable/borda_arredondada"
+                android:backgroundTint="#D5D5D5"
                 android:ems="10"
                 android:gravity="start"
                 android:inputType="textMultiLine"
@@ -99,7 +101,7 @@
                 android:layout_marginTop="50px"
                 android:layout_marginRight="20px"
                 android:background="@drawable/borda_arredondada"
-                android:backgroundTint="#D2BFEC"
+                android:backgroundTint="#FAF2AB"
                 android:ems="10"
                 android:gravity="right"
                 android:inputType="textMultiLine"
@@ -114,6 +116,7 @@
                 android:layout_marginTop="50px"
                 android:layout_marginRight="20px"
                 android:background="@drawable/borda_arredondada"
+                android:backgroundTint="#D5D5D5"
                 android:ems="10"
                 android:gravity="start"
                 android:inputType="textMultiLine"
@@ -128,7 +131,7 @@
                 android:layout_marginTop="50px"
                 android:layout_marginRight="20px"
                 android:background="@drawable/borda_arredondada"
-                android:backgroundTint="#D2BFEC"
+                android:backgroundTint="#FAF2AB"
                 android:ems="10"
                 android:gravity="right"
                 android:inputType="textMultiLine"
@@ -143,7 +146,7 @@
                 android:layout_marginTop="50px"
                 android:layout_marginRight="20px"
                 android:background="@drawable/borda_arredondada"
-                android:backgroundTint="#D2BFEC"
+                android:backgroundTint="#FAF2AB"
                 android:ems="10"
                 android:gravity="right"
                 android:inputType="textMultiLine"
@@ -169,7 +172,8 @@
                 android:hint="digite aqui"
                 android:padding="20px"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="italic" />
 
             <ImageButton
                 android:id="@+id/imageButton"
@@ -178,7 +182,7 @@
                 android:layout_margin="30px"
                 android:layout_weight="1"
                 android:background="@drawable/borda_arredondada"
-                android:backgroundTint="#996FE8"
+                android:backgroundTint="#FFEF63"
                 app:srcCompat="@android:drawable/ic_menu_send" />
         </LinearLayout>
 
