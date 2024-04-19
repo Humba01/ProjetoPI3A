@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="736dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginTop="100px"
+                android:layout_marginBottom="50px"
+                android:foregroundGravity="center|center_horizontal"
+                app:srcCompat="@drawable/papinho_logo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="241dp"
+                android:layout_height="69dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:background="@drawable/borda_arredondada"
+                android:foregroundGravity="center|center_horizontal"
+                android:gravity="center"
+                android:text="Bem vindo ao Papinho! Digite seu número de telefone para realizar o cadastro"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextPhone4"
+                android:layout_width="326dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center|center_horizontal"
+                android:ems="10"
+                android:gravity="center|center_horizontal"
+                android:hint="Entre com um número"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="177dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginTop="100px"
+                android:backgroundTint="#EFE26E"
+                android:gravity="center"
+                android:text="Entrar"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
