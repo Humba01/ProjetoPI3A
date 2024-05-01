@@ -9,23 +9,45 @@
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteX="1dp">
 
-        <TextView
-            android:id="@+id/textView5"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFF7DF"
-            android:fontFamily="@font/outfit_regular"
-            android:gravity="center"
-            android:padding="10sp"
-            android:text="Temas"
-            android:textAlignment="viewStart"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+            android:background="#FFF7DF">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFEF63"
+                android:foregroundTint="#B62C2C"
+                android:padding="20px"
+                android:tint="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/actionModeCloseDrawable"
+                tools:layout_editor_absoluteX="3dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="181dp"
+                android:layout_height="42dp"
+                android:fontFamily="@font/outfit_regular"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="Temas"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                tools:ignore="HardcodedText"
+                tools:layout_editor_absoluteY="-2dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
