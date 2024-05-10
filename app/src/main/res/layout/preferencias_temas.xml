@@ -61,6 +61,9 @@
                 android:layout_width="64dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#FFEB3B"
+                android:checked="true"
+                android:drawableTint="#000000"
                 android:fontFamily="@font/notosans_condensed_regular"
                 android:maxWidth="66dp"
                 android:text="Claro"
@@ -126,7 +129,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="#E3D8B8" />
+                android:background="#FDE49B" />
 
             <View
                 android:id="@+id/view6"
@@ -134,6 +137,132 @@
                 android:layout_height="48dp"
                 android:layout_weight="1"
                 android:background="#F6DE00" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_regular"
+            android:padding="4sp"
+            android:text="Temas Experimentais"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="9sp">
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notosans_condensed_regular"
+                android:maxWidth="66dp"
+                android:text="Light Protanopia e Deuteranopia"
+                app:buttonIconTint="#000000"
+                app:buttonIconTintMode="src_in"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#FFF591" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="9sp">
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notosans_condensed_regular"
+                android:maxWidth="66dp"
+                android:text="Dark Protanopia e Deuteranopia"
+                app:buttonIconTint="#000000"
+                app:buttonIconTintMode="src_in"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#FCE39A" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="9sp">
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notosans_condensed_regular"
+                android:maxWidth="66dp"
+                android:text="Light Tritanopia"
+                app:buttonIconTint="#000000"
+                app:buttonIconTintMode="src_in"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#FEF490" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="9sp">
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/notosans_condensed_regular"
+                android:maxWidth="66dp"
+                android:text="Dark Tritanopia"
+                app:buttonIconTint="#000000"
+                app:buttonIconTintMode="src_in"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#FBE299" />
 
         </LinearLayout>
 
