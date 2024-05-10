@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Passará para o pacote userinterface
+    // Classe Abstrata InterfaceComponentes
+    // Classe InterfaceUsuario
     // Controle de temas da interface de usuário
     protected CheckBox light_checkbox = (CheckBox) findViewById(R.id.checkBox);
     protected CheckBox dark_checkbox = (CheckBox) findViewById(R.id.checkBox2);
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     protected CheckBox dark_tritanopia_checkbox = (CheckBox) findViewById(R.id.checkBox6); // yellow and blue color blindness.
 
     // Troca de temas da UI
-
+    public void trocandoTema() { }
 
 
 }
