@@ -11,6 +11,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.projeto_pi3a.R;
+import papinho.app.logical.*;
+import papinho.app.userinterface.*;
 
 public class MainActivity extends AppCompatActivity {
 

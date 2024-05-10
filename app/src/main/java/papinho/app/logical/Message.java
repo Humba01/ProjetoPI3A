@@ -1,4 +1,4 @@
-package com.demo.projeto_pi3a.logical;
+package papinho.app.logical;
 
 import org.json.JSONArray;
 
