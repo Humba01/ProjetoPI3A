@@ -1,4 +1,4 @@
-package com.example.projeto_pi3a.logical;
+package com.demo.projeto_pi3a.logical;
 
 import java.util.Date;
 
