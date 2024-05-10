@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.projeto_pi3a.R;
 
-public abstract class InterfaceComponentes {
+public abstract class InterfaceComponentes extends AppCompatActivity {
 
     // Passará para o pacote userinterface
     // Classe Abstrata InterfaceComponentes
