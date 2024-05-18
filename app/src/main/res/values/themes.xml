@@ -1,9 +1,51 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ProjetoPI3A" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!--  tema claro  -->
+    <!--  paleta de cores:  -->
+    <style name="Material_Light" parent="Theme.AppCompat">
+        <item name="colorPrimary"></item>
+        <item name="colorPrimaryDark"></item>
+        <item name="color"></item>
     </style>
 
-    <style name="Theme.ProjetoPI3A" parent="Base.Theme.ProjetoPI3A" />
+    <!--  tema escuro  -->
+    <!--  paleta de cores:  -->
+    <style name="Material_Dark" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary"></item>
+        <item name="colorPrimaryDark"></item>
+        <item name="color"></item>
+    </style>
+
+    <!--  tema claro - pratonopia e deuternapia - vermelho e verde -->
+    <!--  paleta de cores:  -->
+    <style name="Material_Light_Pratonopia_Deuternapia" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary"></item>
+        <item name="colorPrimaryDark"></item>
+        <item name="color"></item>
+    </style>
+
+    <!--  tema escuro - pratonopia e deuteranopia - vermelho e verde  -->
+    <!--  paleta de cores:  -->
+    <style name="Material_Dark_Pratonopia_Deuternapia" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary"></item>
+        <item name="colorPrimaryDark"></item>
+        <item name="color"></item>
+    </style>
+
+    <!--  tema claro - tritanopia - amarelo e azul  -->
+    <!--  paleta de cores:  -->
+    <style name="Material_Light_Tritanopia" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary"></item>
+        <item name="colorPrimaryDark"></item>
+        <item name="color"></item>
+    </style>
+
+    <!--  tema escuro - tritanopia - amarelo e azul  -->
+    <!--  paleta de cores:  -->
+    <style name="Material_Dark_Tritanopia" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary"></item>
+        <item name="colorPrimaryDark"></item>
+        <item name="color"></item>
+    </style>
+
 </resources>

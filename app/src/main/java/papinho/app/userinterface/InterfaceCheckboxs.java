@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projeto_pi3a.R;
 
-public abstract class InterfaceComponentes extends AppCompatActivity {
+public abstract class InterfaceCheckboxs extends AppCompatActivity {
 
     // Controle de temas da interface de usuário
     protected CheckBox light_checkbox = (CheckBox) findViewById(R.id.checkBox);

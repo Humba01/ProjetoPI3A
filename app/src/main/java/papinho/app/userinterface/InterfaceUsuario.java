@@ -1,6 +1,9 @@
 package papinho.app.userinterface;
 
-public class InterfaceUsuario extends InterfaceComponentes {
+import android.content.res.Resources;
+
+// código ainda em construção
+public class InterfaceUsuario extends InterfaceCheckboxs {
     public InterfaceUsuario() {}
 
     @Override
