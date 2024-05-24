@@ -5,13 +5,13 @@ import org.json.JSONObject;
 public abstract class UsuarioVO {
 
     String nome = null;
-    String email = null;
+    String telefone = null;
     String palavra_passe = null;
     JSONObject configuracoes = null;
 
     void UserVO(String nome, String email, String palavra_passe, JSONObject configuracoes){
         this.nome = nome;
-        this.email = email;
+        this.telefone = email;
         this.palavra_passe = palavra_passe;
         this.configuracoes = configuracoes;
     };
@@ -24,12 +24,12 @@ public abstract class UsuarioVO {
         this.nome = nome;
     }
 
-    public String getEmail() {
-        return email;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public String getPalavra_passe() {
