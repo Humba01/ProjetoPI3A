@@ -7,6 +7,7 @@ public abstract class ConfiguracoesVO {
     ETema temaAtivo = null;
     int tamanhoTexto = 1;
 
+
     public ConfiguracoesVO(String nome, String email, ETema temaAtivo, int tamanhoTexto) {
         this.nome = nome;
         this.email = email;
