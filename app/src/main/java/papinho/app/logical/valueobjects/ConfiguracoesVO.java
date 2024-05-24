@@ -4,10 +4,14 @@ public abstract class ConfiguracoesVO {
 
     String nome = null;
     String email = null;
+    ETema temaAtivo = null;
+    int tamanhoTexto = 1;
 
-    public void ConfiguracoesVO(String nome, String email){
+    public ConfiguracoesVO(String nome, String email, ETema temaAtivo, int tamanhoTexto) {
         this.nome = nome;
         this.email = email;
+        this.temaAtivo = temaAtivo;
+        this.tamanhoTexto = tamanhoTexto;
     }
 
     public String getNome() {
@@ -24,5 +28,21 @@ public abstract class ConfiguracoesVO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public ETema getTemaAtivo() {
+        return temaAtivo;
+    }
+
+    public void setTemaAtivo(ETema temaAtivo) {
+        this.temaAtivo = temaAtivo;
+    }
+
+    public int getTamanhoTexto() {
+        return tamanhoTexto;
+    }
+
+    public void setTamanhoTexto(int tamanhoTexto) {
+        this.tamanhoTexto = tamanhoTexto;
     }
 }

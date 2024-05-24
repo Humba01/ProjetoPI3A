@@ -1,16 +1,19 @@
 package papinho.app.logical.valueobjects;
 
+import org.json.JSONObject;
+
+import java.time.LocalDateTime;
 import java.util.LinkedList;
 
 public abstract class MensagemVO {
 
     String nome = null;
     String nome_receptor = null;
-    String data_hora = null;
+    LocalDateTime data_hora = null;
     String mensagem = null;
-    LinkedList<String> historico_mensagem = null;
+    LinkedList<JSONObject> historico_mensagens = null;
 
-    void MensagemVO(String nome, String nome_receptor, String data_hora, String mensagem){
+    void MensagemVO(String nome, String nome_receptor, LocalDateTime data_hora, String mensagem){
         this.nome = nome;
         this.nome_receptor = nome_receptor;
         this.data_hora = data_hora;
@@ -33,11 +36,11 @@ public abstract class MensagemVO {
         this.nome_receptor = nome_receptor;
     }
 
-    public String getData_hora() {
+    public LocalDateTime getData_hora() {
         return data_hora;
     }
 
-    public void setData_hora(String data_hora) {
+    public void setData_hora(LocalDateTime data_hora) {
         this.data_hora = data_hora;
     }
 
@@ -49,11 +52,11 @@ public abstract class MensagemVO {
         this.mensagem = mensagem;
     }
 
-    public LinkedList<String> getHistorico_mensagem() {
-        return historico_mensagem;
+    public LinkedList<JSONObject> getHistorico_mensagem() {
+        return historico_mensagens;
     }
 
-    public void setHistorico_mensagem(LinkedList<String> historico_mensagem) {
-        this.historico_mensagem = historico_mensagem;
+    public void setHistorico_mensagem(LinkedList<JSONObject> historico_mensagem) {
+        this.historico_mensagens = historico_mensagem;
     }
 }
