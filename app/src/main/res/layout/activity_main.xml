@@ -52,6 +52,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#FEF6DE"
                 android:fontFamily="@font/outfit_regular"
+                android:onClick="loadTelaDeConfiguracoes"
                 android:text="@string/prefer_ncias"
                 android:textAlignment="viewEnd"
                 android:textColor="#1F1F1F"

@@ -61,6 +61,7 @@
                 android:backgroundTint="#EFE26E"
                 android:fontFamily="@font/notosans_regular"
                 android:gravity="center"
+                android:onClick="returnStartScreen"
                 android:text="Entrar"
                 android:textColor="#000000"
                 android:textStyle="bold" />

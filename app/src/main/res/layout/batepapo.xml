@@ -33,6 +33,7 @@
                     android:layout_margin="18px"
                     android:backgroundTint="#00FFEF63"
                     android:foregroundTint="#B62C2C"
+                    android:onClick="returnStartScreen"
                     android:padding="20px"
                     android:scaleType="center"
                     android:tint="#000000"
