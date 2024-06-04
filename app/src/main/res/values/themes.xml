@@ -1,51 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--  tema claro  -->
-    <!--  paleta de cores:  -->
-    <style name="Material_Light" parent="Theme.AppCompat">
-        <item name="colorPrimary"></item>
-        <item name="colorPrimaryDark"></item>
-        <item name="color"></item>
-    </style>
+<!--    &lt;!&ndash;  paleta de cores:  &ndash;&gt;-->
+<!--    <style name="Material_Light" parent="Theme.AppCompat">-->
+<!--        <item name="colorPrimary"></item>-->
+<!--        <item name="colorPrimaryDark"></item>-->
+<!--        <item name="color"></item>-->
+<!--    </style>-->
 
-    <!--  tema escuro  -->
-    <!--  paleta de cores:  -->
-    <style name="Material_Dark" parent="Theme.AppCompat.DayNight">
-        <item name="colorPrimary"></item>
-        <item name="colorPrimaryDark"></item>
-        <item name="color"></item>
-    </style>
-
-    <!--  tema claro - pratonopia e deuternapia - vermelho e verde -->
-    <!--  paleta de cores:  -->
-    <style name="Material_Light_Pratonopia_Deuternapia" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary"></item>
-        <item name="colorPrimaryDark"></item>
-        <item name="color"></item>
-    </style>
-
-    <!--  tema escuro - pratonopia e deuteranopia - vermelho e verde  -->
-    <!--  paleta de cores:  -->
-    <style name="Material_Dark_Pratonopia_Deuternapia" parent="Theme.AppCompat.DayNight">
-        <item name="colorPrimary"></item>
-        <item name="colorPrimaryDark"></item>
-        <item name="color"></item>
-    </style>
-
-    <!--  tema claro - tritanopia - amarelo e azul  -->
-    <!--  paleta de cores:  -->
-    <style name="Material_Light_Tritanopia" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary"></item>
-        <item name="colorPrimaryDark"></item>
-        <item name="color"></item>
-    </style>
-
-    <!--  tema escuro - tritanopia - amarelo e azul  -->
-    <!--  paleta de cores:  -->
-    <style name="Material_Dark_Tritanopia" parent="Theme.AppCompat.DayNight">
-        <item name="colorPrimary"></item>
-        <item name="colorPrimaryDark"></item>
-        <item name="color"></item>
-    </style>
+<!--    &lt;!&ndash;  tema escuro  &ndash;&gt;-->
+<!--    &lt;!&ndash;  paleta de cores:  &ndash;&gt;-->
+<!--    <style name="Material_Dark" parent="Theme.AppCompat.DayNight">-->
+<!--        <item name="colorPrimary"></item>-->
+<!--        <item name="colorPrimaryDark"></item>-->
+<!--        <item name="color"></item>-->
+<!--    </style>-->
 
 </resources>

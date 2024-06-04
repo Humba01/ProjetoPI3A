@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjetoPI3A"
+        android:theme="@style/Material_Light"
         tools:targetApi="31" >
         <activity
             android:name="com.demo.projeto_pi3a.MainActivity"

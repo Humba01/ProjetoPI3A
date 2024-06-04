@@ -40,23 +40,5 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
     }
 
-    // carregadores de tela
-    public void loadTelaDeConfiguracoes(View view) {
-        setContentView(R.layout.configuracao_usu);
-    }
-    public void loadTelaDeTemas(View view) {
-        setContentView(R.layout.preferencias_temas);
-    }
-    public void loadTelaDeConversa(View view) {
-        setContentView(R.layout.batepapo);
-    }
-    public void loadTelaDeCadastro(View view) {
-        setContentView(R.layout.cadastro_numero);
-    }
-
-    // retornos dos carregadores de tela
-    public void returnStartScreen(View view) {
-        setContentView(R.layout.activity_main);
-    }
 
 }
