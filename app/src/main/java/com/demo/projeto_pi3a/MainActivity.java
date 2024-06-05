@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.projeto_pi3a.R;
 import papinho.app.logical.*;
-import papinho.app.userinterface.*;
+import papinho.app.layout.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,6 +39,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
     }
-
 
 }

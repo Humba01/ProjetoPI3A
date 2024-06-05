@@ -47,7 +47,7 @@
             android:layout_weight="1" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/mais_opcoes_conversa"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -154,6 +154,7 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/botao_nova_conversa"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
@@ -161,7 +162,7 @@
         android:padding="5dp">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/botao_adicionar_nova_conversa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
