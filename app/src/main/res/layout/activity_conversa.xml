@@ -32,6 +32,7 @@
             android:layout_weight="0.5"
             android:fontFamily="@font/notosans_regular"
             android:text="@string/conversa1"
+            android:textColor="#A1887F"
             android:textStyle="bold" />
 
         <Space
@@ -40,13 +41,57 @@
             android:layout_weight="1.4" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/mais_opcoes_conversa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.05"
             app:srcCompat="@drawable/baseline_more_vert_24"
             tools:ignore="ContentDescription" />
 
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="643dp" />
+
+    <LinearLayout
+        android:id="@+id/chat_input_mensagem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5f5f5f"
+        android:orientation="horizontal"
+        tools:ignore="UselessLeaf">
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0.4"
+            android:ems="10"
+            android:hint="digite aqui..."
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="#FFCDD2"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="0.4"
+            android:background="#FFEF63"
+            android:minHeight="4dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/baseline_send_24"
+            tools:ignore="ContentDescription,RtlHardcoded" />
     </LinearLayout>
 
 </LinearLayout>

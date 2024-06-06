@@ -46,7 +46,7 @@
             android:layout_weight="1" />
 
         <ImageButton
-            android:id="@+id/mais_opcoes_conversa"
+            android:id="@+id/mais_configuracoes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"

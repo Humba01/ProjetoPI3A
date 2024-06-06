@@ -12,7 +12,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.projeto_pi3a.R;
 import papinho.app.logical.*;
-import papinho.app.layout.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,8 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
     }
 
-    // telas disponiveis
-
+    // telas disponiveis e seus respectivos elementos (ainda não adicionados)
     public void btnGotoCadastroActivity(View view){
         setContentView(R.layout.activity_cadastro);
     }
