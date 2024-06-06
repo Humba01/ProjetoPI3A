@@ -40,4 +40,50 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
     }
 
+    // telas disponiveis
+
+    public void btnGotoCadastroActivity(View view){
+        setContentView(R.layout.activity_cadastro);
+    }
+
+    public void btnGotoLoginActivity(View view){
+        setContentView(R.layout.activity_login);
+    }
+
+    public void btnGotoMainActivity(View view){
+        setContentView(R.layout.activity_main);
+    }
+
+    public void btnGotoConversaActivity(View view){
+        setContentView(R.layout.activity_conversa);
+    }
+
+    public void btnGotoConversaMaisInfosActivity(View view){
+        setContentView(R.layout.activity_conversa_maisinfos);
+    }
+
+    public void btnGotoConversaGrupoActivity(View view){
+        setContentView(R.layout.activity_conversa_grupo);
+    }
+
+    public void btnGotoConversaGrupoMaisInfosActivity(View view){
+        setContentView(R.layout.activity_conversa_grupo_maisinfos);
+    }
+
+    public void btnGotoConfiguracoesActivity(View view){
+        setContentView(R.layout.activity_configuracoes);
+    }
+
+    public void btnGotoConfiguracoesDadosPessoaisActivity(View view){
+        setContentView(R.layout.activity_configuracoes_dados_pessoais);
+    }
+
+    public void btnGotoConfiguracoesSobreOPapinhoActivity(View view){
+        setContentView(R.layout.activity_configuracoes_sobre_o_papinho);
+    }
+
+    public void btnGotoConfiguracoesTemasEAcessibilidadeActivity(View view){
+        setContentView(R.layout.activity_configuracoes_t_e_a);
+    }
+
 }

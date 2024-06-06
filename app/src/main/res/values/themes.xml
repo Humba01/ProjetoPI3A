@@ -1,19 +1,4 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-
-    <!--  tema claro  -->
-<!--    &lt;!&ndash;  paleta de cores:  &ndash;&gt;-->
-<!--    <style name="Material_Light" parent="Theme.AppCompat">-->
-<!--        <item name="colorPrimary"></item>-->
-<!--        <item name="colorPrimaryDark"></item>-->
-<!--        <item name="color"></item>-->
-<!--    </style>-->
-
-<!--    &lt;!&ndash;  tema escuro  &ndash;&gt;-->
-<!--    &lt;!&ndash;  paleta de cores:  &ndash;&gt;-->
-<!--    <style name="Material_Dark" parent="Theme.AppCompat.DayNight">-->
-<!--        <item name="colorPrimary"></item>-->
-<!--        <item name="colorPrimaryDark"></item>-->
-<!--        <item name="color"></item>-->
-<!--    </style>-->
-
+    <style name="Dark_Theme" parent="Theme.Design.NoActionBar"></style>
+    <style name="Light_Theme" parent="Theme.Design.Light.NoActionBar"></style>
 </resources>
