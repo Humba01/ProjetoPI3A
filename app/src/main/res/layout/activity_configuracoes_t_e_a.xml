@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/cabecalho_config_t_e_a"
+        android:id="@+id/cabecalho_config"
         tools:ignore="MissingConstraints"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:padding="6dp">
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/imageViewConfig_seta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -26,7 +26,7 @@
             tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textviewConfig_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
