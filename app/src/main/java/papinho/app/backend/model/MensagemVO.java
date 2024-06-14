@@ -6,39 +6,40 @@ import java.time.LocalDateTime;
 
 public class MensagemVO {
 
-    String nome;
+    protected int id;
 
-    String nome_receptor;
+    protected String usuario;
 
-    LocalDateTime data_hora;
+    protected String usuario_receptor;
 
-    String mensagem;
+    protected LocalDateTime data_hora;
 
-    JSONArray historico_mensagem;
+    protected String mensagem;
 
-    public MensagemVO(String nome, String nome_receptor, LocalDateTime data_hora, String mensagem, JSONArray historico_mensagem) {
-        this.nome = nome;
-        this.nome_receptor = nome_receptor;
+    protected JSONArray historico_mensagem;
+
+    public MensagemVO(int id, String usuario, String usuario_receptor, LocalDateTime data_hora, String mensagem, JSONArray historico_mensagem) {
+        this.id = id;
+        this.usuario = usuario;
+        this.usuario_receptor = usuario_receptor;
         this.data_hora = data_hora;
         this.mensagem = mensagem;
         this.historico_mensagem = historico_mensagem;
     }
 
-    public String getNome() {
-        return nome;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
-    public String getNome_receptor() {
-        return nome_receptor;
+    public String getUsuarioReceptor() {
+        return usuario_receptor;
     }
 
-    public void setNome_receptor(String nome_receptor) {
-        this.nome_receptor = nome_receptor;
-    }
+    public void setUsuarioReceptor(String usuario_receptor) { this.usuario_receptor = usuario_receptor; }
 
     public LocalDateTime getData_hora() {
         return data_hora;

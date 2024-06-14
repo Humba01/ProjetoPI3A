@@ -4,20 +4,23 @@ import org.json.JSONObject;
 
 public class UsuarioVO {
 
-    int id;
+    protected int id;
 
-    String nome;
+    protected String nome;
 
-    String telefone;
+    protected String telefone;
 
-    String palavraPasse;
+    protected String email;
 
-    JSONObject configuracoes;
+    protected String palavraPasse;
 
-    public UsuarioVO(int id, String nome, String telefone, String palavraPasse, JSONObject configuracoes) {
+    protected JSONObject configuracoes;
+
+    public UsuarioVO(int id, String nome, String telefone, String email, String palavraPasse, JSONObject configuracoes) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
+        this.email = email;
         this.palavraPasse = palavraPasse;
         this.configuracoes = configuracoes;
     }
@@ -29,6 +32,10 @@ public class UsuarioVO {
     public void setId(int id) {
         this.id = id;
     }
+
+    public String getEmail() { return email; }
+
+    public void setEmail(String email) { this.email = email; }
 
     public String getNome() {
         return nome;

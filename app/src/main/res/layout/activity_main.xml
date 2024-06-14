@@ -90,74 +90,6 @@
             tools:ignore="HardcodedText,TextSizeCheck" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/card_conversa2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="#EFEFEF"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="31dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/notosans_regular"
-            android:text="Conversa2"
-            android:textColor="#7986CB"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,InefficientWeight" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="192dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/notosans_regular"
-            android:text="última conversa enviada/recebida"
-            android:textColor="#616161"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/card_conversa3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="#EFEFEF"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="31dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/notosans_regular"
-            android:text="Conversa3"
-            android:textColor="#7986CB"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,InefficientWeight" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="192dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/notosans_regular"
-            android:text="última conversa enviada/recebida"
-            android:textColor="#616161"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-    </LinearLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/botao_nova_conversa"
         android:layout_width="match_parent"
@@ -180,6 +112,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/baseline_add_24"
             tools:ignore="ContentDescription,ImageContrastCheck" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

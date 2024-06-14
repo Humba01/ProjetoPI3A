@@ -10,9 +10,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.demo.projeto_pi3a.R;
-import papinho.app.backend.*;
+import papinho.app.backend.model.*;
+import papinho.app.backend.dao.*;
 
 public class MainActivity extends AppCompatActivity {
+
+    protected static boolean usuarioLogado = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,6 +3,7 @@
     <style name="Base.Theme.ProjetoPI3A" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#FFEF63</item>
     </style>
 
     <style name="Theme.ProjetoPI3A" parent="Base.Theme.ProjetoPI3A" />
