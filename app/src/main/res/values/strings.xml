@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Projeto-PI3A</string>
+    <string name="textview">TextView</string>
+    <string name="prefer_ncias">Preferências</string>
+    <string name="ltima_conversa_enviada_recebida">última conversa enviada/recebida</string>
+    <string name="papinhoLogo">PAPINHO LOGOTIPO</string>
+    <string name="papinho">Papinho</string>
+    <string name="todo">TODO</string>
+    <string name="conversa1">Conversa1</string>
+</resources>

@@ -1,0 +1,141 @@
+package com.example.laboratorio1.dao;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import androidx.annotation.Nullable;
+
+import com.example.laboratorio1.model.AlunoVO;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AlunoDAO extends SQLiteOpenHelper {
+
+    private static final int DB_VERSION = 1;
+    private static final String DB_NAME = "IESB_DB";
+    // definições das tabelas
+    private static final String TB_ALUNOS = "tb_alunos";
+    private static final String KEY_ID = "id";
+    private static final String NOME = "nome";
+    private static final String MATRICULA = "matricula";
+    private static final String EMAIL = "email";
+
+    public AlunoDAO(@Nullable Context context) {
+        super(context, DB_NAME, null, DB_VERSION);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        String CREATE_TB_ALUNOS = "CREATE TABLE " + TB_ALUNOS + " ("
+                + KEY_ID + " INTEGER PRIMARY KEY, "
+                + NOME + " TEXT, "
+                + MATRICULA + " TEXT, "
+                + EMAIL + " TEXT )";
+
+        db.execSQL(CREATE_TB_ALUNOS);
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS " + TB_ALUNOS);
+        onCreate(db);
+    }
+
+    // set
+    public void addAluno(AlunoVO alunoVO) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(NOME, alunoVO.getNome());
+        contentValues.put(MATRICULA, alunoVO.getMatricula());
+        contentValues.put(EMAIL, alunoVO.getEmail());
+
+        db.insert(TB_ALUNOS, null, contentValues);
+        db.close();
+    }
+
+    public List<AlunoVO> getAllAlunos() {
+        List<AlunoVO> ltAlunos = new ArrayList<AlunoVO>();
+        String selectQuery = "SELECT * FROM " + TB_ALUNOS;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do {
+                AlunoVO alunoVO = new AlunoVO();
+                alunoVO.setId(Integer.parseInt(cursor.getString(0)));
+                alunoVO.setNome(cursor.getString(1));
+                alunoVO.setMatricula(cursor.getString(2));
+                alunoVO.setEmail(cursor.getString(3));
+                ltAlunos.add(alunoVO);
+            } while(cursor.moveToNext());
+        }
+        return ltAlunos;
+    }
+
+    // completar o projeto crud
+    public int getCountAlunos(){
+        int countAlunos = 0;
+        String countQuery = "SELECT count(*) FROM " + TB_ALUNOS;
+
+        SQLiteDatabase db = this.getReadableDatabase(); // o db é acionado!
+        Cursor cursor = db.rawQuery(countQuery, null);
+        countAlunos = cursor.getCount();
+
+        return countAlunos;
+    }
+
+    // get / read
+    public AlunoVO getAluno(int id){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // exemplo
+        // select id, nome from tb_alunos where id = X;
+        Cursor cursor = db.query(TB_ALUNOS,
+                new String[] {KEY_ID, NOME},
+                KEY_ID + "= ? ",
+                new String[] { String.valueOf(id)},
+                null, null, null, null);
+
+        if(cursor != null){
+            cursor.moveToFirst();
+        }
+
+        AlunoVO alunoVO = new AlunoVO();
+        alunoVO.setId(Integer.parseInt(cursor.getString(0)));
+        alunoVO.setNome(cursor.getString(1));
+        return alunoVO;
+    }
+
+    // update
+    public int updateAluno(AlunoVO alunoVO){
+
+        int idQtdRegistrosAlterados = 0;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(EMAIL, alunoVO.getEmail());
+
+        // update da linha de registro
+        idQtdRegistrosAlterados = db.update(TB_ALUNOS, contentValues,
+                KEY_ID + "= ? ",
+                new String[] { String.valueOf(alunoVO.getId()) });
+        db.close();
+
+        return idQtdRegistrosAlterados;
+    }
+
+    // delete
+    public void deleteAluno(AlunoVO alunoVO){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TB_ALUNOS, KEY_ID + "= ? ",
+                new String[] { String.valueOf(alunoVO.getId())});
+        db.close();
+    }
+
+}
