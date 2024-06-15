@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.projeto_pi3a"
+    namespace = "com.demo.projeto_pi3a"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.projeto_pi3a"
-        minSdk = 24
+        applicationId = "com.demo.projeto_pi3a"
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

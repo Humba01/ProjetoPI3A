@@ -50,9 +50,9 @@
 
     </LinearLayout>
 
-    <Space
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="643dp" />
+        android:layout_height="625dp" />
 
     <LinearLayout
         android:id="@+id/chat_input_mensagem"

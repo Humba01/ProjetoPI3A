@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="204dp"
+        android:layout_height="82dp"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteY="206dp" />
+        tools:layout_editor_absoluteY="219dp" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -51,10 +51,11 @@
         android:layout_marginTop="16dp"
         android:contentDescription="TODO"
         android:foregroundTint="#F44336"
+        android:onClick="btnGotoCadastroActivity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_24"
-        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -63,6 +64,7 @@
         android:ems="10"
         android:hint="Nome ou Telefone"
         android:inputType="text"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck"
@@ -75,6 +77,7 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:textColorHint="#546E7A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck"
@@ -84,9 +87,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFEF63"
         android:text="Entrar"
-        android:textColor="#546E7A"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="HardcodedText,MissingConstraints"
