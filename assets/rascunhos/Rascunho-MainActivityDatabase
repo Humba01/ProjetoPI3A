@@ -1,0 +1,118 @@
+package com.example.laboratorio1;
+
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+import com.example.laboratorio1.dao.AlunoDAO;
+import com.example.laboratorio1.model.AlunoVO;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_set), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+
+    // telas disponíveis
+    public void btnFormCadastroAluno(View view){
+        setContentView(R.layout.activity_set);
+    }
+
+    public void btnFormBuscaAluno(View view){
+        setContentView(R.layout.activity_get);
+    }
+
+    public void btnFormAtualizaAluno(View view){
+        setContentView(R.layout.activity_update);
+    }
+
+    public void btnFormDeletaAluno(View view){
+        setContentView(R.layout.activity_delete);
+    }
+
+    public void btnVoltaPaginaInicial(View view){
+        setContentView(R.layout.activity_main);
+    }
+
+    // ações dos formulários
+    public void btnOnClickCadastrarAluno(View view) {
+        AlunoDAO alunoDAO = new AlunoDAO(this);
+        AlunoVO alunoVO = new AlunoVO();
+
+        // set
+        EditText campoNome = (EditText) findViewById(R.id.setDadoNome);
+        alunoVO.setNome(campoNome.getText().toString());
+
+        EditText campoMatricula = (EditText) findViewById(R.id.setDadoEmail);
+        alunoVO.setMatricula(campoMatricula.getText().toString());
+
+        EditText campoEmail = (EditText) findViewById(R.id.setDadoMatricula);
+        alunoVO.setEmail(campoEmail.getText().toString());
+        alunoDAO.addAluno(alunoVO);
+
+        // -----------------------------------------------------------
+        Log.d("Insert: ", "Registros no banco de dados com sucesso.");
+    }
+
+    public void btnOnClickVerificarAluno(View view){
+        AlunoDAO alunoDAO = new AlunoDAO(this);
+        AlunoVO alunoVO = new AlunoVO();
+
+        // get
+        EditText campoAluno = (EditText) findViewById(R.id.getDadoId);
+        alunoVO.setId(Integer.parseInt(campoAluno.getText().toString()));
+        alunoDAO.getAluno(alunoVO.getId());
+
+        // -----------------------------------------------------------
+        Log.d("Get: ", "Leitura do banco de dados com sucesso.");
+    }
+
+    public void btnOnClickAtualizarAluno(View view){
+        AlunoDAO alunoDAO = new AlunoDAO(this);
+        AlunoVO alunoVO = new AlunoVO();
+
+        // update
+        EditText campoAluno = (EditText) findViewById(R.id.updateDadoNome);
+        alunoVO.setNome(campoAluno.getText().toString());
+
+        EditText campoMatricula = (EditText) findViewById(R.id.updateDadoMatricula);
+        alunoVO.setMatricula(campoMatricula.getText().toString());
+
+        EditText campoEmail = (EditText) findViewById(R.id.updateDadoEmail);
+        alunoVO.setEmail(campoEmail.getText().toString());
+        alunoDAO.updateAluno(alunoVO);
+
+        // -----------------------------------------------------------
+        Log.d("Update: ", "Atualização dos registros no banco de dados com sucesso.");
+    }
+
+    public void btnOnClickDeletarAluno(View view){
+        AlunoDAO alunoDAO = new AlunoDAO(this);
+        AlunoVO alunoVO = new AlunoVO();
+
+        // delete
+        EditText campoAluno = (EditText) findViewById(R.id.deleteDadoId);
+        alunoVO.setId(Integer.parseInt(campoAluno.getText().toString()));
+        alunoDAO.deleteAluno(alunoVO);
+
+        // -----------------------------------------------------------
+        Log.d("Delete: ", "Remoção do banco de dados feita com sucesso.");
+    }
+
+}

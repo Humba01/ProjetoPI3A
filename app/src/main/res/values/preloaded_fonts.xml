@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/righteous</item>
+        <item>@font/outfit_regular</item>
+        <item>@font/notosans_regular</item>
+        <item>@font/notosans_condensed_regular</item>
+        <item>@font/notosans_extracondensed_regular</item>
+        <item>@font/notosans_semicondensed_regular</item>
+    </array>
+</resources>
