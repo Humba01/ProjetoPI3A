@@ -14,9 +14,11 @@ public class UsuarioVO {
 
     protected String palavraPasse;
 
-    protected JSONObject configuracoes;
+    protected String configuracoes;
 
-    public UsuarioVO(int id, String nome, String telefone, String email, String palavraPasse, JSONObject configuracoes) {
+    public UsuarioVO(){}
+
+    public UsuarioVO(int id, String nome, String telefone, String email, String palavraPasse, String configuracoes) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
@@ -61,11 +63,11 @@ public class UsuarioVO {
         this.palavraPasse = palavraPasse;
     }
 
-    public JSONObject getConfiguracoes() {
+    public String getConfiguracoes() {
         return configuracoes;
     }
 
-    public void setConfiguracoes(JSONObject configuracoes) {
+    public void setConfiguracoes(String configuracoes) {
         this.configuracoes = configuracoes;
     }
 }
