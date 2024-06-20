@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import org.json.JSONArray;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -89,7 +90,27 @@ public class MensagemDAO extends SQLiteOpenHelper {
         return mensagemVO;
     }
 
-    public List<MensagemVO> getAllMensagens(){ return List.of(new MensagemVO()); }
+    public List<MensagemVO> getAllMensagens(){
+        List<MensagemVO> ltMensagens = new ArrayList<MensagemVO>();
+        String selectQuery = "SELECT * FROM " + TB_MENSAGENS;
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if(cursor.moveToFirst()){
+            do {
+                MensagemVO mensagemVO = new MensagemVO();
+                mensagemVO.setId(Integer.parseInt(cursor.getString(0)));
+                mensagemVO.setUsuario(cursor.getString(1));
+                mensagemVO.setUsuario_receptor(cursor.getString(2));
+                mensagemVO.setData_hora(cursor.getString(3));
+                mensagemVO.setMensagem(cursor.getString(4));
+                mensagemVO.setHistorico_mensagem(cursor.getString(5));
+                ltMensagens.add(mensagemVO);
+            } while(cursor.moveToNext());
+        }
+        return ltMensagens;
+    }
 
     public int updateMensagem(MensagemVO mensagemVO){
 
@@ -137,16 +158,4 @@ public class MensagemDAO extends SQLiteOpenHelper {
 //            } while(cursor.moveToNext());
 //        }
 //        return ltAlunos;
-//    }
-//
-//    // completar o projeto crud
-//    public int getCountAlunos(){
-//        int countAlunos = 0;
-//        String countQuery = "SELECT count(*) FROM " + TB_ALUNOS;
-//
-//        SQLiteDatabase db = this.getReadableDatabase(); // o db é acionado!
-//        Cursor cursor = db.rawQuery(countQuery, null);
-//        countAlunos = cursor.getCount();
-//
-//        return countAlunos;
 //    }

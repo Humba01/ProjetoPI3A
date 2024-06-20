@@ -137,4 +137,9 @@
         tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TouchTargetSizeCheck"
         tools:layout_editor_absoluteY="559dp" />
 
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
