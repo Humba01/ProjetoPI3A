@@ -12,19 +12,29 @@ public class MensagemVO {
 
     protected String usuario_receptor;
 
-    protected LocalDateTime data_hora;
+    protected String data_hora;
 
     protected String mensagem;
 
-    protected JSONArray historico_mensagem;
+    protected String historico_mensagem;
 
-    public MensagemVO(int id, String usuario, String usuario_receptor, LocalDateTime data_hora, String mensagem, JSONArray historico_mensagem) {
+    public MensagemVO(){}
+
+        public MensagemVO(int id, String usuario, String usuario_receptor, String data_hora, String mensagem, String historico_mensagem) {
         this.id = id;
         this.usuario = usuario;
         this.usuario_receptor = usuario_receptor;
         this.data_hora = data_hora;
         this.mensagem = mensagem;
         this.historico_mensagem = historico_mensagem;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUsuario() {
@@ -35,17 +45,19 @@ public class MensagemVO {
         this.usuario = usuario;
     }
 
-    public String getUsuarioReceptor() {
+    public String getUsuario_receptor() {
         return usuario_receptor;
     }
 
-    public void setUsuarioReceptor(String usuario_receptor) { this.usuario_receptor = usuario_receptor; }
+    public void setUsuario_receptor(String usuario_receptor) {
+        this.usuario_receptor = usuario_receptor;
+    }
 
-    public LocalDateTime getData_hora() {
+    public String getData_hora() {
         return data_hora;
     }
 
-    public void setData_hora(LocalDateTime data_hora) {
+    public void setData_hora(String data_hora) {
         this.data_hora = data_hora;
     }
 
@@ -57,11 +69,11 @@ public class MensagemVO {
         this.mensagem = mensagem;
     }
 
-    public JSONArray getHistorico_mensagem() {
+    public String getHistorico_mensagem() {
         return historico_mensagem;
     }
 
-    public void setHistorico_mensagem(JSONArray historico_mensagem) {
+    public void setHistorico_mensagem(String historico_mensagem) {
         this.historico_mensagem = historico_mensagem;
     }
 }
