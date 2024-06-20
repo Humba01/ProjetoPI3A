@@ -22,8 +22,9 @@
             android:layout_marginRight="8dp"
             android:layout_weight="0.05"
             android:contentDescription="TODO"
+            android:onClick="btnReturnBackMainActivity"
             app:srcCompat="@drawable/baseline_arrow_back_24"
-            tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+            tools:ignore="ContentDescription,HardcodedText,RtlHardcoded,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textviewConfig_"

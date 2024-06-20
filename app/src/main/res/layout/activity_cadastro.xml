@@ -10,27 +10,29 @@
         android:id="@+id/defPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:autoText="false"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
         android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill,Deprecated,HardcodedText,MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="484dp" />
+        tools:ignore="Autofill,Deprecated,HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="318dp"
         android:layout_height="81dp"
+        android:layout_marginTop="28dp"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/vector"
-        tools:ignore="MissingConstraints,ImageContrastCheck"
-        tools:layout_editor_absoluteY="35dp" />
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView9"
@@ -50,92 +52,102 @@
         android:id="@+id/textView10"
         android:layout_width="236dp"
         android:layout_height="61dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="25dp"
         android:fontFamily="@font/notosans_regular"
         android:text="Bem-vindo ao Papinho!\n Crie uma conta para começar."
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/defNome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
 
     <EditText
         android:id="@+id/defNome"
         android:layout_width="211dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="17dp"
         android:ems="10"
         android:hint="Nome"
         android:inputType="text"
         android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/defTelefone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="293dp" />
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/defTelefone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
         android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/defEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="356dp" />
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/defEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColorHint="#546E7A"
+        app:layout_constraintBottom_toTopOf="@+id/defPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="420dp" />
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="#FFFFFF"
         android:onClick="btnGotoLoginActivity"
         android:text="Logar"
         android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteY="647dp" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
         android:text="ou"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteY="611dp" />
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="190dp"
         android:layout_height="47dp"
-        android:onClick="btnReturnBackMainActivity"
+        android:layout_marginBottom="5dp"
+        android:onClick="btnCadastraUsuario"
         android:text="Cadastrar E Entrar"
         android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="559dp" />
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TouchTargetSizeCheck" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"

@@ -64,13 +64,13 @@ public class UsuarioDAO extends SQLiteOpenHelper {
         db.close();
     }
 
-    public UsuarioVO getUsuario(int id){
+    public UsuarioVO getUsuario(String nome, String password){
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TB_USUARIOS,
-                new String[] {KEY_ID, NOME},
-                KEY_ID + "= ? ",
-                new String[] { String.valueOf(id)},
+                new String[] {NOME, PALAVRA_PASSE},
+                NOME + "= ? ",
+                new String[] { String.valueOf(nome), String.valueOf(password)},
                 null, null, null, null);
 
         if(cursor != null){
@@ -80,10 +80,8 @@ public class UsuarioDAO extends SQLiteOpenHelper {
         UsuarioVO usuarioVO = new UsuarioVO();
         usuarioVO.setId(Integer.parseInt(cursor.getString(0)));
         usuarioVO.setNome(cursor.getString(1));
-        usuarioVO.setEmail(cursor.getString(2));
-        usuarioVO.setTelefone(cursor.getString(3));
-        usuarioVO.setPalavraPasse(cursor.getString(4));
-        usuarioVO.setConfiguracoes(cursor.getString(5));
+        usuarioVO.setTelefone(cursor.getString(2));
+        usuarioVO.setPalavraPasse(cursor.getString(3));
         return usuarioVO;
     }
 

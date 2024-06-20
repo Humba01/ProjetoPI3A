@@ -52,6 +52,7 @@
             android:layout_weight="1"
             android:backgroundTint="#00000000"
             android:foregroundGravity="right"
+            android:onClick="btnGotoConfiguracoesActivity"
             app:srcCompat="@drawable/baseline_more_vert_24"
             tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -63,8 +64,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="#EFEFEF"
+        android:onClick="btnGotoConversaActivity"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck">
 
         <TextView
             android:id="@+id/textView3"
@@ -90,6 +93,42 @@
             tools:ignore="HardcodedText,TextSizeCheck" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/card_grupo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#EFEFEF"
+        android:onClick="btnGotoConversaGrupoActivity"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosans_regular"
+            android:text="Grupo1"
+            android:textColor="#7986CB"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,InefficientWeight" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/notosans_regular"
+            android:text="última conversa enviada/recebida"
+            android:textColor="#616161"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+    </LinearLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/botao_nova_conversa"
         android:layout_width="match_parent"
@@ -100,8 +139,8 @@
 
         <ImageView
             android:id="@+id/botao_adicionar_nova_conversa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
             android:layout_gravity="bottom"
             android:background="#FFEB3B"
             android:foregroundGravity="right"
@@ -110,6 +149,10 @@
             android:radius="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/baseline_add_24"
             tools:ignore="ContentDescription,ImageContrastCheck" />
 
