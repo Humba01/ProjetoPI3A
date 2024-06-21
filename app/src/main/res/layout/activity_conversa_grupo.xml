@@ -46,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.05"
+            android:onClick="btnGotoConversaGrupoMaisInfosActivity"
             app:srcCompat="@drawable/baseline_more_vert_24"
             tools:ignore="ContentDescription" />
 

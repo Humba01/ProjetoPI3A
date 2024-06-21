@@ -127,12 +127,12 @@ public class MainActivity extends AppCompatActivity {
         usuarioVO.setPalavraPasse(enterPassword.getText().toString());
         UsuarioVO verificaUsuario = usuarioDAO.getUsuario(usuarioVO.getNome(), usuarioVO.getPalavraPasse());
 
-        if(verificaUsuario.getNome() == usuarioVO.getNome() && verificaUsuario.getPalavraPasse() == usuarioVO.getPalavraPasse()) {
+//        if(verificaUsuario.getNome() == usuarioVO.getNome() && verificaUsuario.getPalavraPasse() == usuarioVO.getPalavraPasse()) {
             this.btnReturnBackMainActivity(view);
             usuarioLogado = true;
-        } else {
-            Log.w("Warn Form: ", "Dados Incorretos");
-        }
+//        } else {
+//            Log.w("Warn Form: ", "Dados Incorretos");
+//        }
 
         // -----------------------------------------------------------
         Log.d("Get: ", "Leitura do banco de dados com sucesso.");
