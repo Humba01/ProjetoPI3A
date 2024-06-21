@@ -8,8 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +23,6 @@ public class UsuarioDAO extends SQLiteOpenHelper {
     private static final String EMAIL = "email";
     private static final String TELEFONE = "telefone";
     private static final String PALAVRA_PASSE = "palavra_passe";
-    private static final String CONFIGURACOES = "configuracoes";
 
     public UsuarioDAO(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -38,8 +35,7 @@ public class UsuarioDAO extends SQLiteOpenHelper {
                 + NOME + " TEXT, "
                 + EMAIL + " TEXT, "
                 + TELEFONE + " TEXT, "
-                + PALAVRA_PASSE + " TEXT, "
-                + CONFIGURACOES + " TEXT )";
+                + PALAVRA_PASSE + " TEXT )";
 
         db.execSQL(CREATE_TB_USUARIOS);
     }
@@ -58,7 +54,6 @@ public class UsuarioDAO extends SQLiteOpenHelper {
         contentValues.put(EMAIL, usuarioVO.getEmail());
         contentValues.put(TELEFONE, usuarioVO.getTelefone());
         contentValues.put(PALAVRA_PASSE, usuarioVO.getPalavraPasse());
-        contentValues.put(CONFIGURACOES, usuarioVO.getConfiguracoes());
 
         db.insert(TB_USUARIOS, null, contentValues);
         db.close();

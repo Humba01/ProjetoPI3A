@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -138,32 +139,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnUpdateUsuario(View view){
-//        // update
-//        EditText campoAluno = (EditText) findViewById(R.id.updateDadoNome);
-//        alunoVO.setNome(campoAluno.getText().toString());
-//
-//        EditText campoMatricula = (EditText) findViewById(R.id.updateDadoMatricula);
-//        alunoVO.setMatricula(campoMatricula.getText().toString());
-//
-//        EditText campoEmail = (EditText) findViewById(R.id.updateDadoEmail);
-//        alunoVO.setEmail(campoEmail.getText().toString());
-//        alunoDAO.updateAluno(alunoVO);
-//
-//        // -----------------------------------------------------------
-//        Log.d("Update: ", "Atualização dos registros no banco de dados com sucesso.");
+        UsuarioDAO usuarioDAO = new UsuarioDAO(this);
+        UsuarioVO usuarioVO = new UsuarioVO();
+
+        EditText updateNome = (EditText) findViewById(R.id.updateNome);
+        usuarioVO.setNome(updateNome.getText().toString());
+
+        EditText updateEmail = (EditText) findViewById(R.id.updateEmail);
+        usuarioVO.setEmail(updateEmail.getText().toString());
+
+        EditText updateTelefone = (EditText) findViewById(R.id.updateEmail);
+        usuarioVO.setTelefone(updateTelefone.getText().toString());
+
+        EditText updatePassword = (EditText) findViewById(R.id.updatePassword);
+        usuarioVO.setTelefone(updatePassword.getText().toString());
+        usuarioDAO.updateUsuario(usuarioVO);
+
+        // -----------------------------------------------------------
+        Log.d("Update: ", "Atualização dos registros no banco de dados com sucesso.");
     }
 
     public void btnDeleteUsuario(View view){
-//        AlunoDAO alunoDAO = new AlunoDAO(this);
-//        AlunoVO alunoVO = new AlunoVO();
-//
-//        // delete
-//        EditText campoAluno = (EditText) findViewById(R.id.deleteDadoId);
-//        alunoVO.setId(Integer.parseInt(campoAluno.getText().toString()));
-//        alunoDAO.deleteAluno(alunoVO);
-//
-//        // -----------------------------------------------------------
-//        Log.d("Delete: ", "Remoção do banco de dados feita com sucesso.");
+        UsuarioDAO usuarioDAO = new UsuarioDAO(this);
+        UsuarioVO usuarioVO = new UsuarioVO();
+
+        // uso do MOC para esta operação
+        usuarioVO.setNome("Fulano");
+        usuarioDAO.deleteUsuario(usuarioVO);
+
+        // -----------------------------------------------------------
+        Log.d("Delete: ", "Remoção do banco de dados feita com sucesso.");
+
+        setContentView(R.layout.activity_cadastro);
         usuarioLogado = false;
     }
 
