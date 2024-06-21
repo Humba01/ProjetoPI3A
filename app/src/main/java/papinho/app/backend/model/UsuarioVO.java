@@ -14,17 +14,14 @@ public class UsuarioVO {
 
     protected String palavraPasse;
 
-    protected String configuracoes;
-
     public UsuarioVO(){}
 
-    public UsuarioVO(int id, String nome, String telefone, String email, String palavraPasse, String configuracoes) {
+    public UsuarioVO(int id, String nome, String telefone, String email, String palavraPasse) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
         this.palavraPasse = palavraPasse;
-        this.configuracoes = configuracoes;
     }
 
     public int getId() {
@@ -63,11 +60,4 @@ public class UsuarioVO {
         this.palavraPasse = palavraPasse;
     }
 
-    public String getConfiguracoes() {
-        return configuracoes;
-    }
-
-    public void setConfiguracoes(String configuracoes) {
-        this.configuracoes = configuracoes;
-    }
 }
